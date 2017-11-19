@@ -1,0 +1,28 @@
+setlogin - set login name, then exec
+====================================
+
+Usage
+-----
+
+    setlogin name prog...
+
+Description
+-----------
+
+Exactly what it says on the tin; see setlogin(2) for more detail.
+
+Caveats
+-------
+
+This is a BSDism. Consult your system's manpage on getlogin for more detail as
+to whether this is a necessary or even useful operation.
+
+Normally the login name is set properly on login, so you're unlikely to need
+this unless you're spawning interactive programs on behalf of another user from
+the init environment or similar.
+
+License
+-------
+
+ISC License, see COPYING. This is an absolutely trivial program though; a clean
+room implementation probably wouldn't differ by more than three or four words.
